@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Conversion</title>
+  <link rel="icon" href="logo.jpg">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="text-center mt-5">Welcome</h1><br>
+  <div class="container mt-5">
+    <form class="text-center mt-3" onsubmit="return false;">
+      <h2>Temperature Conversion 🌡️</h2><br>
+      <h4 class="one">Enter Temperature</h4>
+      <input type="number" id="textbox" class="form-control" required><br><br>
+      <h4 class="two">Convertor :</h4> 
+      <br>
+      <input type="radio" id="toCelsius" name="convertor" value="celsius" required>
+      <label for="toCelsius">Celsius - Fahrenheit</label><br><br>
+      <input type="radio" id="toFahrenheit" name="convertor" value="fahrenheit" required>
+      <label for="toFahrenheit">Fahrenheit - Celsius</label><br><br>
+     
+      <button type="button" onclick="convert()" class="btn btn-primary second">Submit</button><br><br>
+      <h5 id="result"></h5>
+    </form>
+  </div>
+  <script src="jp.js"></script>
+</body>
+</html>
